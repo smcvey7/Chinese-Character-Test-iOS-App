@@ -12,6 +12,7 @@
 		5601F3412AF1DFA0004673D1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601F3402AF1DFA0004673D1 /* Item.swift */; };
 		5601F3432AF1DFA2004673D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5601F3422AF1DFA2004673D1 /* Assets.xcassets */; };
 		5601F3462AF1DFA2004673D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5601F3452AF1DFA2004673D1 /* Preview Assets.xcassets */; };
+		5601F34D2AF1E32A004673D1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601F34C2AF1E32A004673D1 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		5601F3402AF1DFA0004673D1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5601F3422AF1DFA2004673D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5601F3452AF1DFA2004673D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5601F34C2AF1E32A004673D1 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				5601F33C2AF1DFA0004673D1 /* Chinese_Character_Test_iOSApp.swift */,
 				5601F33E2AF1DFA0004673D1 /* ContentView.swift */,
+				5601F34C2AF1E32A004673D1 /* Login.swift */,
 				5601F3402AF1DFA0004673D1 /* Item.swift */,
 				5601F3422AF1DFA2004673D1 /* Assets.xcassets */,
 				5601F3442AF1DFA2004673D1 /* Preview Content */,
@@ -143,6 +146,7 @@
 				5601F33F2AF1DFA0004673D1 /* ContentView.swift in Sources */,
 				5601F3412AF1DFA0004673D1 /* Item.swift in Sources */,
 				5601F33D2AF1DFA0004673D1 /* Chinese_Character_Test_iOSApp.swift in Sources */,
+				5601F34D2AF1E32A004673D1 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
