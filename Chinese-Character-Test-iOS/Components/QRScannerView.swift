@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct QRScannerView: View {
+    @State var scanResult = "No QR code detected"
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .bottom) {
+                    QRScanner()
+         
+                    Text(scanResult)
+                        .padding()
+                        .background(.black)
+                        .foregroundColor(.white)
+                        .padding(.bottom)
+                }
     }
 }
 
