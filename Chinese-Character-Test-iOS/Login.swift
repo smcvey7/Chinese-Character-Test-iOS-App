@@ -12,6 +12,10 @@ struct Login: View {
     @State private var password = ""
     @State private var isLogged = false
     @State private var role = "student"
+    @State private var errors = []
+    @EnvironmentObject var userViewModel: UserViewModel
+    @Environment(\.modelContext) private var modelContext
+    
     
     struct UserObject: Codable {
         let role: String
@@ -39,8 +43,9 @@ struct Login: View {
             if let error = error {
                 print(print("Error: \(error)"))
             }else if let data = data{
-                if let responseString = String(data: data, encoding: .utf8){
-                    print("Response: \(responseString)")
+                if let user = try? JSONDecoder().decode(User.self, from: data) {
+//                    userViewModel.setUser(user: user)
+                    print(user)
                 }
             }
         }
@@ -51,11 +56,11 @@ struct Login: View {
         Text("Please log in to get started")
         NavigationView {
             VStack {
-//                Image("./Assets.xcassets/Images/logo192.png")
-//                    .resizable()
-//                    .frame(width: 100, height: 100)
-//                    .padding(.bottom, 20)
-                Section(header: Text("Role")){
+                Image("CCT-logo")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .padding(.bottom, 20)
+                Section(header: Text("I am a...")){
                     Picker("I am a...", selection: $role){
                         Text("student").tag("student")
                         Text("teacher/researcher").tag("teacher")

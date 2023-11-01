@@ -10,6 +10,8 @@ import SwiftData
 
 @main
 struct Chinese_Character_Test_iOSApp: App {
+//    @StateObject var userViewModel = UserViewModel()
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,7 +27,9 @@ struct Chinese_Character_Test_iOSApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            LoginView()
+//            .environmentObject(userViewModel)
         }
         .modelContainer(sharedModelContainer)
     }
