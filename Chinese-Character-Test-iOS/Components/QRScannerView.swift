@@ -9,9 +9,11 @@ import SwiftUI
 
 struct QRScannerView: View {
     @State var scanResult = "No QR code detected"
+    
+    
     var body: some View {
         ZStack(alignment: .bottom) {
-                    QRScanner()
+            QRScanner(result: $scanResult)
          
                     Text(scanResult)
                         .padding()
